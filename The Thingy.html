@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Button Tally</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="buttons">
+      <button id="button1" class="button">studied for 15 minutes straight</button>
+      <button id="button2" class="button">Button 2</button>
+      <!-- Add more buttons here -->
+      <div class="custom-input">
+        <input type="text" id="customText" placeholder="Custom Text">
+        <input type="number" id="customValue" placeholder="Point Value">
+        <button id="addCustom" class="button">Add Custom</button>
+      </div>
+    </div>
+    <div class="tally">
+      <h2>Tally</h2>
+      <p id="tallyCount">0</p>
+    </div>
+    <div class="log">
+      <h2>Log</h2>
+      <table id="logTable">
+        <thead>
+          <tr>
+            <th>Time</th>
+            <th>Button</th>
+            <th>Point Value</th>
+          </tr>
+        </thead>
+        <tbody id="logBody">
+          <!-- Log rows will be added dynamically here -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
